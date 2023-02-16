@@ -401,7 +401,7 @@ function createIntent(intentMax, qui){
     if (qui == "player"){
         for (let i = 0; i < intentMax; i++){
                 const intent = document.createElement("img");
-                intent.src = "img/intent/intent.png";
+                intent.src = "img/Intent/intent.png";
                 intent.classList.add("intent-p");
                 document.getElementById('intent-player').appendChild(intent);     
         }
@@ -409,7 +409,7 @@ function createIntent(intentMax, qui){
     else{
         for (let i = 0; i < intentMax; i++){
             const intent = document.createElement("img");
-            intent.src = "img/intent/intent.png";
+            intent.src = "img/Intent/intent.png";
             intent.classList.add("intent-o");
             document.getElementById('intent-opponent').appendChild(intent);         
         }
@@ -491,7 +491,7 @@ function intentClear(){
     })
     createIntent(intentMax,"player");
     intentsOpponent.forEach(intent => {
-        intent.src = "img/intent/intent.png";
+        intent.src = "img/Intent/intent.png";
         intent.classList.remove("used");
     })
 }
@@ -515,17 +515,17 @@ function intentOpponent(){
             let rdmNumber = Math.floor(Math.random() * 3);
             switch(rdmNumber){
                 case 0: //Rock
-                intent.src = "img/intent/intent_rock.png";
+                intent.src = "img/Intent/intent_rock.png";
                 intentArrayOpponent.push("rock");
                 break;
 
                 case 1: //Paper
-                intent.src = "img/intent/intent_paper.png";
+                intent.src = "img/Intent/intent_paper.png";
                 intentArrayOpponent.push("paper");
                 break;    
 
                 case 2: //Scissors
-                intent.src = "img/intent/intent_scissors.png";
+                intent.src = "img/Intent/intent_scissors.png";
                 intentArrayOpponent.push("scissors");
                 break;              
             }
@@ -750,7 +750,7 @@ async function CalculDegat(vainqueur, playerAttack, opponentAttack, comboCounter
 
             const intents = document.querySelectorAll('.intent-o');
             if (intents[numeroIntent+1] != undefined){
-                intents[numeroIntent+1].src = "img/intent/intent.png";
+                intents[numeroIntent+1].src = "img/Intent/intent.png";
             }
             hitCombo();
         }
