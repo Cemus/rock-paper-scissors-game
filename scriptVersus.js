@@ -61,14 +61,14 @@ function createIntent(strikes, qui){
     if (qui == "player"){
         for (let i = 0; i < strikes; i++){
                 const intent = document.createElement("img");
-                intent.src = "img/intent/intent.png";
+                intent.src = "img/Intent/intent.png";
                 document.getElementById('strike-display-player').appendChild(intent);     
         }
     }
     else{
         for (let i = 0; i < strikes; i++){
             const intent = document.createElement("img");
-            intent.src = "img/intent/intent.png";
+            intent.src = "img/Intent/intent.png";
             intent.classList.add("intent-o");
             document.getElementById('strike-display-opponent').appendChild(intent);         
         }
