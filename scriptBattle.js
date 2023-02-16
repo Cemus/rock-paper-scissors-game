@@ -966,7 +966,7 @@ async function endFight(winner){
                 let level = sessionStorage.getItem("Level");
                 level = parseInt(level) + 1;
                 sessionStorage.setItem("Level", level);
-                window.location.href="./rewards.html";
+                window.location.href="./index.html";
             }
             else{
                 window.location.href="./lose.html";

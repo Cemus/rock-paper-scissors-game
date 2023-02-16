@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = module src="scriptRewards.js" defer></script>
+        <link rel="stylesheet" href="styleRewards.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+        <title>Menu</title>
+    </head>
+
+<body>
+    
+<header>
+  
+</header>
+
+<article>
+    <div id="health-menu">
+        <p class="title">Health points :&nbsp;</p>
+        <progress id="player-health" value = "50" max = "100"></progress>
+        <p><span id="hp">100</span> / <span id="hpMax">100</span></p>
+    </div>
+    <div class="artifacts-menu">
+        <p class="title">Artifacts :&nbsp;</p>
+        <div id="artifacts-list">
+        </div>
+    </div>
+    <div class="cards-menu">
+        <p class="title">Cards :&nbsp;</p>
+        <div id="cards-list">
+        </div>
+    </div>
+    <div id="action-menu">
+        <p class="action-menu-text title">Choose an action :&nbsp;</p>
+        <div id="actions">
+            <img class="action learn" src="img/Actions/learn.png" alt="">
+            <img class="action rest" src="img/Actions/rest.png" alt="">
+            <img class="action treasure" src="img/Actions/treasure.png" alt="">
+        </div>
+    </div>
+</article>
+
+<footer>
+    <button id="further">Continue</button>
+</footer>
+
+</body>
+
+</html>

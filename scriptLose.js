@@ -4,7 +4,7 @@ function Hover(obj){
 
 function newGame(){
     sessionStorage.clear();
-    window.location.href="./rewards.html";
+    window.location.href="./index.html";
 }
 
 let Phrase = document.getElementById("levelPhrase");
