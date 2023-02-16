@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styleVersus.css">
+        <script type = module src="scriptVersus.js" defer></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+        <title>Incoming battle</title>
+    </head>
+
+
+<body>
+    
+<header>
+  
+</header>
+
+<article>
+    <!--Health-->
+    <div class="menu">
+        <div class="menu-player">
+            <div class="health-menu">
+                <p>Health points :&nbsp;</p>
+                <progress id="player-health" value = "50" max = "100"></progress>
+                <p><span id="hp">100</span> / <span id="hpMax">100</span></p>
+            </div>
+            <div class="strike-menu">
+                <div class="strike-text">
+                    <p>Maximum strikes :&nbsp;</p>
+                </div>
+                <div id="strike-display-player"></div>
+            </div>
+            <div class="stat-menu">
+                <div class="stat-text">
+                    <p>Attack points :&nbsp;</p>
+                </div>
+                <div class="stat-display">
+                    <div class="rock">
+                        <img src="img/Intent/intent_rock.png" alt="">
+                        <span id="rock-dgt-player">0</span>
+                    </div>
+                    <div class="paper">
+                        <img src="img/Intent/intent_paper.png" alt="">
+                        <span id="paper-dgt-player">9999</span>
+                    </div>
+                    <div class="scissors">
+                        <img src="img/Intent/intent_scissors.png" alt="">
+                        <span id="scissors-dgt-player">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="char-menu">
+                <div class="char-player">
+                    <img class="char-image-player" src="img/mc/stand.gif" alt="">
+                </div>
+            </div>
+            <div class="versus-menu">
+                <p>Player</p>
+            </div>
+        </div>
+
+        <div class="menu-opponent">
+            <div class="health-menu">
+                <p>Health points :&nbsp;</p>
+                <progress id="opponent-health" value = "100" max = "100"></progress>
+                <p><span id="opponentHp">100</span> / <span id="opponentHpMax">100</span></p>
+            </div>
+            <div class="strike-menu">
+                <div class="strike-text">
+                    <p>Maximum strikes :&nbsp;</p>
+                </div>
+                <div id="strike-display-opponent"></div>
+            </div>
+            <div class="stat-menu">
+                <div class="stat-text">
+                    <p>Attack points :&nbsp;</p>
+                </div>
+                <div class="stat-display">
+                    <div class="rock">
+                        <img src="img/Intent/intent_rock.png" alt="">
+                        <span id="rock-dgt-opponent">0</span>
+                    </div>
+                    <div class="paper">
+                        <img src="img/Intent/intent_paper.png" alt="">
+                        <span id="paper-dgt-opponent">9999</span>
+                    </div>
+                    <div class="scissors">
+                        <img src="img/Intent/intent_scissors.png" alt="">
+                        <span id="scissors-dgt-opponent">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="char-menu">
+                <div class="char-opponent">
+                    <img id="opponent-image" class="char-image-opponent" src="" alt="">
+                </div>
+            </div>
+            <div class="versus-menu">
+                <p>Opponent</p>
+            </div>
+        </div>
+    </div>  
+
+</article>
+
+<footer>
+    <button id="further">Fight</button>
+</footer>
+
+</body>
+
+</html>
