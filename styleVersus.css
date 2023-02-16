@@ -1,0 +1,194 @@
+*{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-user-drag: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    image-rendering: pixelated;
+    font-family: "VT323",fantasy;
+    font-size: 2vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    height: 85vh;
+    background-color:  black;
+    gap: 2vh;
+}
+
+/* ////////////////////////////////////// */
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+.menu-player, .menu-opponent{
+    display: flex;
+    flex-direction: column; 
+    gap: 2vh;
+}
+
+/*Health*/
+.health-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Health bar*/
+
+#player-health{
+    display: flex;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    accent-color: orangered;
+    width: 30vh;
+
+}
+
+#player-health::-webkit-progress-bar {
+    background-color: red;
+    border: solid;
+  }
+  #player-health::-webkit-progress-value {
+    background-color: orange;
+  }
+
+/* Opponent */
+#opponent-health {
+    display: flex;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    image-rendering: pixelated;
+    accent-color: orangered;
+    width: 30vh;
+    direction: rtl;
+}
+#opponent-health::-webkit-progress-bar {
+    background-color: red;
+    border: solid;
+}
+#opponent-health::-webkit-progress-value {
+    background-color: orange;
+}
+/* ////////////////////////////////////////// */
+/*Strikes*/
+.strike-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.strike-text {
+    align-self: center;
+}
+
+
+#strike-display-opponent, #strike-display-player{
+    display: flex; 
+    gap: 2vh; 
+}
+/*Stats*/
+
+.stat-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.stat-text {
+    align-self: center;
+}
+
+
+.stat-display{
+    display: flex; 
+    gap: 2vh; 
+}
+
+.rock, .paper, .scissors{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2vh;  
+}
+
+/* ////////////////////////////////////////// */
+
+/*Characters*/
+.char-menu{
+    display: flex;
+    flex-direction: column;
+
+}
+.char-player, .char-opponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.char-image-player, .char-image-opponent{
+    position: relative;
+    bottom: 7vh;
+    height: 35vh;
+}
+
+.char-image-player{
+    left: 1vh;
+}
+
+.char-image-opponent{
+    right: 1vh;
+}
+
+/* ////////////////////////////////////////// */
+
+/*Versus*/
+.versus-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.versus-player, .versus-opponent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/* ////////////////////////////////////////// */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    margin: 1vh;
+    justify-content: center;
+
+
+}
+
+#further{
+    background-color: #2A3492;
+    font-size: larger;
+    border-radius: 10vh;
+    padding: 1vh;
+    margin: 1vh;
+    width: 50vh;
+    text-align: center;
+}

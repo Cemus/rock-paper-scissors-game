@@ -1,0 +1,54 @@
+*{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-user-drag: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    image-rendering: pixelated;
+    font-family: "VT323",fantasy;
+    font-size: 2vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-container{
+    display: flex;
+    position: relative;
+    top: 3vh;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 20vh;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 10vh;
+}
+
+p{
+    position: relative;
+    font-size: 4vh;
+    padding: 4vh;
+}
+button{
+    display: initial;
+    background-color: #2A3492;
+    font-size: 5vh;
+    border-radius: 10vh;
+    padding: 1vh;
+    margin: 10vh;
+    width: 50vh;
+
+    text-align: center;
+}

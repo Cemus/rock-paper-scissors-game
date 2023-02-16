@@ -1,0 +1,161 @@
+*{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-user-drag: none;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    image-rendering: pixelated;
+    image-rendering: pixelated;
+    font-family: "VT323",fantasy;
+    font-size: 2vh;
+}
+
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+li{
+    list-style: none;
+    color: white;
+    background-color: #2A3492;
+    border-radius: 10vh;
+    padding: 1vh;
+    margin: 1vh;
+    width: 25vh;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    height: 82vh;
+    background-color:  black;
+
+}
+#health-menu, .artifacts-menu, .cards-menu, #action-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+#artifacts-list, #cards-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+
+.cards{
+    height: 12vh;
+}
+.button-page-next, .button-page-previous{
+    background-color: #2A3492;
+    width: 5vh;
+    border-radius: 1vh;
+    color: white;
+    text-align: center;
+    text-justify: center;
+    text-orientation: upright;
+    font-size: larger;
+}
+.artifacts{
+    height: 3vh;
+}
+
+#action-menu{
+    margin: 1vh;
+    position: relative;
+    top: 2vh;
+}
+
+.title{
+    font-size: larger;
+}
+
+#actions{
+    display: flex;
+    flex-direction: row;
+    height: 24vh;
+    gap: 8vh;
+
+}
+
+
+
+.bonus-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10vh;
+    text-align: center;
+}
+
+.bonus-title{
+    display: flex;
+    font-size:medium;
+    text-align: center;
+
+    justify-content: center;
+    margin: 0vh;
+}
+
+.bonus-desc{
+    display: flex;
+    font-size: small;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+/*Health bar*/
+#player-health{
+    display: flex;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    accent-color: orangered;
+    width: 40vh;
+
+}
+
+#player-health::-webkit-progress-bar {
+    background-color: red;
+    border: solid;
+  }
+  #player-health::-webkit-progress-value {
+    background-color: orange;
+  }
+
+/* ////////////////////////////////////////// */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+    margin: 1vh;
+    justify-content: center;
+
+
+}
+
+#further{
+    display: none;
+    background-color: #2A3492;
+    font-size: larger;
+    border-radius: 10vh;
+    padding: 1vh;
+    margin: 1vh;
+    width: 50vh;
+
+    text-align: center;
+}
