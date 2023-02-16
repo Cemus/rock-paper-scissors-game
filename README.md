@@ -2,4 +2,4 @@
 
 Rock paper scissors game created with HTML, CSS and JS.
 
-[Live Demo]:point_left:
+Demo link : https://cemus.github.io/rock-paper-scissors-game/ :)
