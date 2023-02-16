@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="scriptBattle.js" defer></script>
+    <link rel="stylesheet" href="styleBattle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <title>Battle</title>
+</head>
+<body>
+    <header> 
+        <h1 id="level"></h1>
+    </header>
+
+    <div class="ui">
+        <div id="artifacts">
+            <p>Artifacts :&nbsp</p> 
+            <!--Artifact-->
+        </div>
+    </div>
+    
+    <div class="intent">
+
+        <div id="intent-player">
+        </div>
+        <div id="intent-opponent">
+        </div>
+    </div>
+    
+    <div class="arena">
+        <div class="container-button">
+            <button id="button-fight">Fight!</button>
+        </div>
+
+        <div class="background">
+
+            <div class="healthbars">
+                <div id="combo-p">
+                    <p id="combo-number"></p>
+                    <p class="combo-text">COMBO</p>
+                </div>
+
+                <progress id="player-health" value = "100" max = "100"></progress>
+                <progress id="opponent-health" value = "100" max = "100"></progress>
+            </div>
+            <img class="background" src="img/bckgrnd.png" alt="">
+
+
+        </div>
+
+        <div class="dmg">
+            <p id="dmg-number-player">10</p>
+            <p id="dmg-number-opponent">10</p>
+        </div>
+        <div class="duelists">  
+
+            <img id="mc" src="img/mc/stand.gif" alt="">
+            <img id="opponent" src="" alt="">
+
+
+        </div>
+
+
+
+    </div>
+
+    <div id="deck">
+        <div id="endfight">
+            <p id="endfight-text">You lose...<br><br> Proceed to the next bpzjizefhjzepifhjzeiofhzejofzehfozehf</p>
+        </div>
+
+    </div>
+</body>
+</html>
